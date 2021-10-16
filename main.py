@@ -1,5 +1,5 @@
 import os
-from conversation import Conversation
+from GPT3context import Conversation
 
 
 def interface(conversation):

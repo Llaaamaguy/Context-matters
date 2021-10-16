@@ -1,3 +1,5 @@
+__author__ = "Llaaamaguy"
+
 import openai
 import os
 
