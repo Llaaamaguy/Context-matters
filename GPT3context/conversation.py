@@ -3,7 +3,7 @@ __author__ = "Llaaamaguy"
 import openai
 import os
 
-class Conversation:
+class Conversation(object):
   def __init__(self, openaiId, fId=000000):
     self.id = fId
   
