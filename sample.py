@@ -5,14 +5,14 @@ from GPT3context import Conversation
 # A simple example for an ongoing conversation with the AI
 def interface(conversation):
   # Get the pre existing converastion in the console
-  conversation.loadContext()
+  conversation.load_context()
   while True:
     userinput = input("Human: ")
     if userinput == "CMDexit":
       break
     elif userinput == "CMDreset":
-      conversation.resetContext(clear=True)
-      conversation.loadContext()
+      conversation.reset_context(clear=True)
+      conversation.load_context()
     else:
       print(conversation.send(userinput))
 
@@ -24,6 +24,4 @@ def main():
   )
   interface(conversation)
 
-
-if __name__ == "__main__":
-  main()
+main()
